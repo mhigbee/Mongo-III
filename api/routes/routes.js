@@ -1,7 +1,7 @@
 module.exports = (app) => {
   //add your new routes here
-  const userControllers = require('../controllers/userControllers.js');
-  const postControllers = require('../controllers/postControllers.js');
+  const userControllers = require('../controllers/userControllers');
+  const postControllers = require('../controllers/postControllers');
 
   app.route('/new-user')
     .post(userControllers.createUser);
